@@ -1,0 +1,41 @@
+
+body {
+    font-family: roboto;
+}
+
+.sectionheader {
+width: 100%;
+height: 800px;
+}
+
+h1 {
+    font-family: roboto;
+    font-size: 48px;
+    color: #2DBE60;
+}
+
+.album_title {
+    font-size: 48px;
+    font-weight:800;
+    color: black;
+}
+
+#artistname {
+    font-size: 24px;
+    font-style: italic;
+}
+
+.searchcrate {
+    display: inline-block;
+    padding: 1em 50px 1.1em;
+    margin-bottom: 40px;
+    background: #44B78B;
+    color: white;
+    border: 0;
+    font-weight: 700;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}

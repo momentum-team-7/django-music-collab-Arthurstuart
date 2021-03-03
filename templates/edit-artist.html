@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+<form action="{% url 'edit-artist' %}" method="POST"></form>
+    {{ form.as_p }}
+    {% csrf_token %}
+</form>
+{% block content %}
