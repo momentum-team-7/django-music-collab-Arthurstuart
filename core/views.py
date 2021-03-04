@@ -46,7 +46,8 @@ def edit_album(request, pk):
         form = AlbumForm(request.PATCH, instance=album)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect('templates/edit-artist.html')
+            return HttpResponseRedirect('album.html')
         else:
-            form = AlbumForm()
+            form = AlbumForm(instance=album)
+        return render(request, templates/edit-album.html,{'form':form, album:album})
 

@@ -6,7 +6,7 @@ class User(AbstractUser):
 
 class Album(models.Model):
     artist = models.CharField(max_length=280)
-    # cover = models.im
+    # cover = models.ImageField(upload_to='images/')
     title = models.CharField(max_length=280)
     album_release = models.IntegerField(blank=True, null=True)
     def __str__(self):

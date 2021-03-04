@@ -1,10 +1,11 @@
 
 body {
-    font-family: roboto;
+    padding: 80px 100px;
+    font: 18px, roboto;
 }
 
 .sectionheader {
-width: 100%;
+width: max-content;
 height: 800px;
 }
 
@@ -20,19 +21,19 @@ h1 {
     color: black;
 }
 
+.search-the-crate {
+    font-family: Helvetica;
+    color: firebrick;
+    border-radius: 60px;
+    border: none;
+    margin: auto;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
 #artistname {
     font-size: 24px;
     font-style: italic;
-}
-
-.searchcrate {
-    display: inline-block;
-    padding: 1em 50px 1.1em;
-    margin-bottom: 40px;
-    background: #44B78B;
-    color: white;
-    border: 0;
-    font-weight: 700;
 }
 
 img {

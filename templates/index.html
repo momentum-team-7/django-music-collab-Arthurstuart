@@ -9,17 +9,20 @@
 </head>
 <body>
    <div class=sectionheader> <img src=https://images.unsplash.com/photo-1499415479124-43c32433a620?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80 alt=""></div>
-    <h1 div="main_header">Learn More About Hip Hop</h1>
+    <h1 div="main_header">Let's Learn About Hip Hop</h1>
    <h2>Reasonable Doubt Beginnings to the Black Album Ending...</h2>
         <nav>
             <a href="{% url 'home' %}">Home</a>
             <a href="{% url 'artists' %}">Artist</a>
         </nav>
-   <h3>Search Through the Crates</h3>
+   <h3>Add Your Favorite Albums</h3>
 <br>
-{% for album in albums %}
-{{album}}
-<a href="{% url 'album-details' pk=album.pk %}" class="searchcrate">Dig Deeper</a>  
-{% endfor %}      
+<div class="form">
+    <button class="add_artist_database"><a href="{% url 'add-artist' %}">Add Artist</a></button>
+    <button><a href="{% url 'add-album' %}">Add Album</a></button>
+</div>
+{% for artist in artists}
+    {% endfor %}
+{% endblock %}      
 </body>
 </html>

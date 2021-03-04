@@ -32,3 +32,6 @@ cp project/.env.sample project/.env
 ```
 
 If you want to use another directory for your project directory, replace `project` above with the name of your directory.
+--------------
+
+<a href="{% url 'album-details' pk=album.pk %}" class="searchcrate">Dig Deeper</a>  
